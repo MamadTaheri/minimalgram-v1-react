@@ -3,7 +3,6 @@ import Posts from "./components/post/Posts";
 import data from "./data";
 
 const App = () => {
-  console.log(data);
   return (
     <>
       <Header />
