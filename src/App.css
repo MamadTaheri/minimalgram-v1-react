@@ -67,6 +67,65 @@ header {
     color: red; 
 }
 
+.single-post {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+.single-post h2 {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.single-post img {
+    width: 50%;
+}
+
+.single-post .comments {
+    width: 50%;
+    padding: 30px;
+}
+
+.single-post .post {
+    width: 50%;
+}
+
+.comments .comment {
+    border-bottom: 1px solid #333;
+    padding: 5px;
+}
+
+.comments .comment h4 {
+    margin-bottom: 5px;
+}
+
+.comments form {
+    display: flex;
+    flex-direction: column;
+}
+
+.comments form * {
+    margin-top: 10px;
+    width: 100%;
+}
+.comments form input,
+.comments form button,
+.comments form textarea {
+    padding: 0 7px;
+}
+
+.comments form input,
+.comments form button {
+    height: 35px;
+}
+
+
+
+
+
 @media (max-width: 768px) {
     .posts {
         padding: 15px;
@@ -75,5 +134,15 @@ header {
         width: 100%;
         padding: 5px;
     }
-    
+    .single-post img {
+        width: 100%;
+    }
+    .single-post .comments {
+        width: 100%;
+        padding: 10px;
+    }
+    .single-post .post {
+        width: 100%;
+        padding: 10px;
+    }
 }
