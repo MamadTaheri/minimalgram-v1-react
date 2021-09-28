@@ -3,12 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+ul, 
+li {
+    list-style: none;
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
 body {
     font-family: sans-serif;
+}
+img {
+    width: 100%;
+    display: block;
 }
 
 header {
@@ -28,4 +36,22 @@ header {
 .post {
     margin-bottom: 10px;
     width: 32%;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.post p {
+    margin-top: 10px;
+}
+.post .actions {
+    display: flex;
+    font-size: 20px;
+    padding: 10px;
+}
+.post .actions i {
+     margin-right: 15px;
+     cursor: pointer;
+}
+
+.icon-red {
+    color: red; 
 }

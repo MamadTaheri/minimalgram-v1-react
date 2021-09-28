@@ -57,7 +57,7 @@ const data = [
   {
     id: 5,
     title: "Post5",
-    img: "./images/animal5.jpg",
+    img: "./images/animal7.jpg",
     description: "this is nice post 5",
     isLiked: false,
     comments: [
