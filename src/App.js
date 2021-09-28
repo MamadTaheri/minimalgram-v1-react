@@ -1,12 +1,23 @@
 import Header from "./components/UI/Header";
-import Posts from "./components/post/Posts";
 import data from "./data";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./components/pages/Home";
+import SinglePost from "./components/pages/SinglePost";
 
 const App = () => {
   return (
     <>
-      <Header />
-      <Posts posts={data} />
+      <Router>
+        <Header />
+        <Switch>
+          <Route path="/" exact>
+            <Home posts={data} />
+          </Route>
+          <Route path="/single-post">
+            <SinglePost />
+          </Route>
+        </Switch>
+      </Router>
     </>
   );
 };
