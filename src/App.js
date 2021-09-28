@@ -13,7 +13,7 @@ const App = () => {
           <Route path="/" exact>
             <Home posts={data} />
           </Route>
-          <Route path="/single-post">
+          <Route path="/single-post/:id">
             <SinglePost />
           </Route>
         </Switch>
