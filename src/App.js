@@ -1,12 +1,13 @@
-import React from 'react';
 import Header from './components/Header';
+ import data from './data';
 
 const App = () => {
+    console.log(data)
     return (
-        <div>
+        <>
             <Header />
             <h1>App </h1>
-        </div>
+        </>
     );
 };
 
