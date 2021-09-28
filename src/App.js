@@ -1,14 +1,15 @@
-import Header from './components/Header';
- import data from './data';
+import Header from "./components/UI/Header";
+import Posts from "./components/post/Posts";
+import data from "./data";
 
 const App = () => {
-    console.log(data)
-    return (
-        <>
-            <Header />
-            <h1>App </h1>
-        </>
-    );
+  console.log(data);
+  return (
+    <>
+      <Header />
+      <Posts posts={data} />
+    </>
+  );
 };
 
 export default App;
