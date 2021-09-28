@@ -1,6 +1,6 @@
 const data = [
   {
-    id: 1,
+    id: 0,
     title: "Post1",
     img: "./images/animal1.jpg",
     description: "this is nice post 1",
@@ -21,7 +21,7 @@ const data = [
     ],
   },
   {
-    id: 2,
+    id: 1,
     title: "Post2",
     img: "./images/animal2.jpg",
     description: "this is nice post 2",
@@ -34,7 +34,7 @@ const data = [
     ],
   },
   {
-    id: 3,
+    id: 2,
     title: "Post3",
     img: "./images/animal3.jpg",
     description: "this is nice post 3",
@@ -47,7 +47,7 @@ const data = [
     ],
   },
   {
-    id: 4,
+    id: 3,
     title: "Post4",
     img: "./images/animal4.jpg",
     description: "this is nice post 4",
@@ -55,7 +55,7 @@ const data = [
     comments: [],
   },
   {
-    id: 5,
+    id: 4,
     title: "Post5",
     img: "./images/animal7.jpg",
     description: "this is nice post 5",
@@ -72,7 +72,7 @@ const data = [
     ],
   },
   {
-    id: 6,
+    id: 5,
     title: "Post6",
     img: "./images/animal6.jpg",
     description: "this is nice post 6",
