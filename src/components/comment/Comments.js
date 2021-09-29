@@ -1,8 +1,7 @@
 import React from "react";
-import Comment from "./Comment";
-import AddComment from "./AddComment";
+import Comment from "./Comment"; 
 
-const Comments = ({ comments }) => {
+const Comments = ({ comments}) => {
   return (
     <div className="comments">
       <h2>Comments</h2>
@@ -10,7 +9,7 @@ const Comments = ({ comments }) => {
         <Comment comment={comment} key={index} />
       ))}
 
-      <AddComment />
+    
     </div>
   );
 };

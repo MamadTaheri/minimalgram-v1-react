@@ -14,6 +14,12 @@ const App = () => {
     setPosts(updatedPosts); 
   }
 
+  const addComment = (id, comment) => {
+    const updatedPosts = [...posts];
+    updatedPosts[id].comments.push(comment);
+    setPosts(updatedPosts);
+  }
+
   return (
     <>
       <Router>
@@ -23,7 +29,7 @@ const App = () => {
             <Home posts={posts} toggleLike={toggleLike} />
           </Route>
           <Route path="/single-post/:id">
-            <SinglePost />
+            <SinglePost addComment={addComment} />
           </Route>
         </Switch>
       </Router>
