@@ -7,12 +7,12 @@ import { useParams } from "react-router-dom";
 import Comments from "../comment/Comments";
 import AddCommentForm from "../comment/AddCommentForm";
 
-const SinglePost = ({ addComment }) => {
+const SinglePost = ({ addComment, toggleLike }) => {
   const { id } = useParams();
   return (
     <div className="container">
       <div className="single-post">
-        <Post post={data[id]} />
+        <Post post={data[id]} forSinglePage={true} toggleLike={toggleLike} />
         <div className="comments-wrapper">
           <Comments comments={data[id].comments} />
           <AddCommentForm addComment={addComment} id={id} />

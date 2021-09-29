@@ -29,7 +29,7 @@ const App = () => {
             <Home posts={posts} toggleLike={toggleLike} />
           </Route>
           <Route path="/single-post/:id">
-            <SinglePost addComment={addComment} />
+            <SinglePost addComment={addComment} toggleLike={toggleLike} />
           </Route>
         </Switch>
       </Router>

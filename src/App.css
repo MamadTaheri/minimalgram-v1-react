@@ -38,6 +38,7 @@ header {
     width: 32%;
     border: 1px solid #ccc;
     padding: 10px;
+    align-self: flex-start;
 }
 .post p {
     margin-top: 10px;
@@ -57,7 +58,7 @@ header {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    object-position: center;
+    object-position: center top;
 }
 .post h2 {
     font-size: 16px;
@@ -81,7 +82,7 @@ header {
 }
 
 .single-post img {
-    width: 50%;
+    width: 100%;
 }
 
 .single-post .comments {
@@ -91,6 +92,11 @@ header {
 
 .single-post .post {
     width: 50%;
+}
+
+.text-center {
+    text-align: center;
+    padding: 20px 0;
 }
 
 .comments-wrapper {
@@ -131,6 +137,10 @@ header {
     height: 35px;
 }
 
+.single-post .post img {
+    height: 350px;
+}
+
 
 
 
@@ -153,5 +163,9 @@ header {
     .single-post .post {
         width: 100%;
         padding: 10px;
+    }
+    .comments-wrapper {
+        width: 100%;
+        padding: 20px;
     }
 }
